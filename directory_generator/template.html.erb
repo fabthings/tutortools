@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= lab_name %></title>
+  <style type="text/css">
+  * {
+    font-family: Helvetica, Arial, sans;
+  }
+  </style>
+</head>
+<body>
+
+  <h1><%= lab_name %></h1>
+  <ul id="students">
+    <% people.each do |person| %>
+      <li class="student"><a href="<%= person[:formatted_name] %>/"><%= person[:name] %></a></li>
+    <% end %>
+  </ul>
+
+</body>
+</html>
