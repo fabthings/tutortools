@@ -9,8 +9,8 @@ names_file = "names.csv"
 
 require "erb"
 
-names = File.readlines(names_file).map{
-  |n| n.gsub(/[^ 0-9a-z\-]/i, '').chomp.split(' ').map(&:capitalize).join(' ').sort
+names = File.readlines(names_file).sort.map{
+  |n| n.gsub(/[^ 0-9a-z\-]/i, '').chomp.split(' ').map(&:capitalize).join(' ')
 }
 
 people = []
