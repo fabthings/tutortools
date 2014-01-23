@@ -7,3 +7,8 @@
 3. Change `template.html.erb` as you please, but leave the `<%=%>` tags intact
 4. Run `ruby generate.rb`
 5. Open the `output/index.html` file to check that everything worked ok
+
+
+## Example
+
+Look in the `output/` directory, or visit http://fabthings.github.com/tutortools/directory_generator
